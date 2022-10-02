@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 .hero, footer{
@@ -7,7 +8,6 @@
 }
 
 .hero-logo{
-    float: left;
     color: #F9FAF8;
     font-size: 24px;
 }
@@ -23,98 +23,156 @@
     font-size: 18px;
 }
 
-.quote-section{
-    height: 350px;
-    background-color: #E5E7EB;
+.quote-text{
     font-size: 36px;
+    font-weight: light;
     font-style: italic;
     color: #1F2937;
 }
 
-footer{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
+.hero, footer{
+    padding: 1em 13em;
 }
 
-/*--------------------------------------------------------*/
+/*---------------------Navigation--------------------------*/
 .navigation{
-   margin:0;
-   margin-top: -5px;
-   padding: 30px;
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: baseline;
 }
 
+/*Taking out the bullets and set some gap between the links*/
 ul{
     list-style-type: none;
     display: flex;
-    margin:0;
-    padding:0;
     gap: 16px;
 }
 
-/*--------------------------------------------------------*/
-.website-intro{
-    padding:30px;
+/*I don't want the links with a different color and with underline*/
+ul a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*----------------------Hero Section-----------------------*/
+.intro{
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
-    height: 350px;
+    padding: 5em 0;
+    gap: 4em;   
 }
 
-.intro-left{
-    width: 400px;
-    height: 200px;
-    margin-right:30px;
-}
-
-.intro-right{
+/*Setting the flex direction vertically and setting some space between elements*/
+.left{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-    width:400px;
-    height:200px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/*-------------------------------------------------------*/
+.right{
+    flex-shrink: 0;
+    width: 50%;
+}
 
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 300px;
+}
+/*---------------------------------------------------------*/
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*-----------------------Random Info Section----------------*/
 .random-info{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 350px;
+    padding:2em 0;
+
+}
+
+#information-header{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
 }
 
 .info-boxes{
     display: flex;
+    align-items:center;
     justify-content: space-between;
-    align-items: center;
-    gap:32px;
+    gap: 18px;
+    padding: 3em 0;
 }
 
 #box{
-    border: 2px blue solid;
-    width:100px;
-    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border: 4px blue solid;
+    border-radius: 10%;
 }
-/*-------------------------------------------------------*/
+
+/*-----------------Quote Section--------------------------*/
 
 .quote-section{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 4em 13em;
+    background-color: #E5E7EB;
 }
 
-/*-------------------------------------------------------*/
+#author{
+    font-size: 20px;
+    font-weight: 900;
+    align-self:flex-end;
+    margin-right: 35px;
+    padding-top: 1em;
+}
+
+/*------------Sign Up Section..............................*/
 .signup-section{
+    padding: 5em 13em;
+}
+
+.signup-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border: 2px solid #3882F6;
+    border-radius: 20px;
+    width: 100%;
+    padding: 2em;
+    gap: 16em;
+}
+
+/*--------------Footer-------------------------------------*/
+
+footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 350px;
+}
+
+/*--------------------------Button--------------------------*/
+
+.signup-btn{
+    color:  #E5E7EB;
+    background-color: #3882F6;
 }
