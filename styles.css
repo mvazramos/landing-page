@@ -195,3 +195,7 @@ footer{
 .signup-section .signup-btn{
     border: 2px solid #E5E7EB;
 }
+
+.intro .left .signup-btn{
+    border: none;
+}
