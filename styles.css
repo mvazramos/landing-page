@@ -111,7 +111,8 @@ main{
 .info-boxes{
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 18px;
     padding: 3em 0;
 }
@@ -124,6 +125,17 @@ main{
     width: 200px;
     border: 4px blue solid;
     border-radius: 10%;
+}
+
+#box-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-wrap p{
+    padding-top: 5px;
 }
 
 /*-----------------Quote Section--------------------------*/
