@@ -175,4 +175,11 @@ footer{
 .signup-btn{
     color:  #E5E7EB;
     background-color: #3882F6;
+    padding: 5px 10px;
+    border-radius: 7px;
+    width: 120px;
+}
+
+.signup-section .signup-btn{
+    border: 2px solid #E5E7EB;
 }
